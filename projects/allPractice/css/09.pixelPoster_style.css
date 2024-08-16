@@ -1,0 +1,56 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 30fr 70fr;
+  background-color: teal;
+
+  
+  header {
+    background-color: orange;
+    display: grid;
+    padding: 24px;
+    grid-template-columns: 60fr 40fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 1px;
+    
+    .info {
+      &:nth-child(3) {
+        font-size: 48px;
+      }
+
+      &:nth-child(4) {
+        color: white;
+        font-size: 18px;
+      }
+    }
+  }
+  section {
+    overflow: hidden;
+    main {
+      background-color: red;
+      display: grid;
+      grid-template: repeat(11, 1fr) / repeat(11, 1fr);
+      gap: 4px;
+      transform: scale(1.1);
+      transform: translateY(2);
+      overflow: hidden;
+
+      .circles {
+        aspect-ratio: 1/1;
+        background-color: white;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background-color: red;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width:100vw;
+  gap: 24px;
+  .thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid white;
+    .thumbnail-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: red;
+      h1, h4 {
+        margin:0px;
+      }
+      h4 {
+        font-weight: 400;
+      }
+      h1 {
+        font-size: 32px;
+      }
+    }
+    .thumbnail-image {
+      width: 480px;
+      height:320px;
+      border-radius: 24px;
+      background-image: url("https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloudfront.net%2Fmedia%2Fpublic%2Fthumbnails%2Fcss-masterclass-min.jpg&w=1920&q=75");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .allPractices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    gap:24px;
+    width:100%;
+    .practice {
+      width: 100%;
+      height:300px;
+      border-radius: 12px;
+      overflow: hidden;
+      .practice-image {
+        width:100%;
+        height:100%;
+        background-image: url("image/01.png");
+        background-size: cover;
+        background-position: center;
+      }
+      /*--하나하나 이미지 넣기--*/
+      &:nth-child(2) {
+        .practice-image {
+          background-image: url("image/02.png");
+        }
+      }
+      &:nth-child(3) {
+        .practice-image {
+          background-image: url("image/03.jpeg");
+        }
+      }
+      &:nth-child(4) {
+        .practice-image {
+          background-image: url("image/04.png");
+        }
+      }
+      &:nth-child(5) {
+        .practice-image {
+          background-image: url("image/05.jpg");
+        }
+      }
+      &:nth-child(6) {
+        .practice-image {
+          background-image: url("image/06.jpeg");
+        }
+      }
+      &:nth-child(7) {
+        .practice-image {
+          background-image: url("image/07.png");
+        }
+      }
+      &:nth-child(8) {
+        .practice-image {
+          background-image: url("image/08.png");
+        }
+      }
+      &:nth-child(9) {
+        .practice-image {
+          background-image: url("image/09.jpeg");
+        }
+      }
+      &:nth-child(10) {
+        .practice-image {
+          background-image: url("image/10.jpeg");
+        }
+      }
+      &:nth-child(11) {
+        .practice-image {
+          background-image: url("image/99.jpg");
+        }
+      }
+    }
+  }
+}

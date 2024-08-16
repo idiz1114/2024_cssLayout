@@ -1,0 +1,130 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding:0px 0px;
+  margin:0px 0px;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  display:grid;
+  grid-template-columns: 75px 1fr 75px;
+  grid-template-rows: 75px 1fr 75px;
+  .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: 1 / span 3;
+  }
+  main {
+    background-color: white;
+    width:100%;
+    height:100%;
+    border: 2px solid black;
+    overflow: scroll;
+    padding: 0px 12px;
+    .main-content__thumnails {
+      height:500%;
+      width:100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-rows: repeat(auto-fill, minmax(240px, 1fr));
+      grid-auto-flow: row dense;
+      gap: 8px;
+    }
+  }
+  .left {
+    height: 100%;
+    width:75px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    span {
+      display: block;
+      transform: rotatez(-90deg);
+    }
+  }
+  .right {
+    height: 100%;
+    width:75px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    span {
+      display: block;
+      transform: rotatez(90deg);
+    }
+  }
+  
+  .bottom {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding:  0px;
+  margin: 0px;
+  box-sizing: border-box;
+  ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    li {
+      margin: 8px 0px;
+      list-style: none;
+      margin-left: 0px;
+      padding-left: 0px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      border-bottom: 2px solid black;
+    }
+  }
+}
+
+.main-content__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  .main-content__type {
+    text-align: right;
+  }
+}
+
+.img {
+  background-image: url("https://i.pinimg.com/474x/c6/e2/60/c6e26099c5d8c844df6b2ab967bad1b8.jpg");
+  background-size: cover;
+  aspect-ratio: 1.8 / 1.2;
+  margin-bottom: 8px;
+  h5 {
+    margin-top: 8px;
+  }
+}
+
+.content-thumnail {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100vh;
+  min-width: max-content;
+}
+
+#poster {
+  background-color: #DDE1D3;
+  width:560px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#container {
+  width:100%;
+  height:100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.box-1 {
+  /*--Parent--*/
+  grid-row:1/2;
+  /*--Display--*/
+  display: grid;
+  grid-template: 48px 1fr / 48px 1fr 48px;
+  background-color: #01A0C8;
+  /*height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;*/
+  .beige {
+    background-color: #DDE1D3;
+    grid-column:2/3;
+    grid-row:2/4;
+    width:100%;
+    height:100%;
+    /*--Display--*/
+    display: flex;
+    align-items: end;
+    padding:0px 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight:800;
+  }
+}
+
+.box-2 {
+  /*--Parent--*/
+  grid-row:2/3;
+  /*--Display--*/
+  display: grid;
+  grid-template: 48px 1fr 48px / 48px 1fr 48px;
+  box-sizing: border-box;
+
+  .main {
+    display: flex;
+    align-items: end;
+    padding:0px 12px;
+    box-sizing: border-box;
+    grid-column: 2/3;
+    grid-row:2/3;
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 100%;
+    }
+  }
+  
+  .brown {
+    background-color: #573533;
+    grid-row:1/span 3;
+  }
+  .red {
+    background-color: #D03022;
+    grid-column: 2/3;
+    grid-row:1/2;
+  }
+  .blue {
+    background-color: #01A0C8;
+    grid-column: 2/3;
+    grid-row:3/4;
+  }
+}
+
+.box-3 {
+  /*--Parent--*/
+  grid-row:3/4;
+  background-color: #D03022;
+  /*--Display--*/
+  display: grid;
+  grid-template: 48px 1fr 48px / 48px 1fr 48px;
+  box-sizing: border-box;
+  .beige {
+    background-color:#DDE1D3;
+    font-size: 14px;
+    font-weight:800;
+    grid-row: 1/3;
+    grid-column:2/3;
+    /*--Display--*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0px 12px;
+    box-sizing: border-box;
+  }
+}

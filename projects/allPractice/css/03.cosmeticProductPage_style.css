@@ -1,0 +1,148 @@
+@import "reset.css";
+
+$borderColor: grey;
+$borderWidth: 2px;
+
+body {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  height: 100vh;
+  background-color: teal;
+}
+
+header {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  background-color: yellow;
+  nav {
+    background-color: $borderColor;
+    ul {
+      display:grid; 
+      grid-template-columns: repeat(5,1fr) 1.5fr repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      gap:$borderWidth;
+      height: 100%;
+      li {
+        /*--display: block;--*/
+        /*--margin: auto;--*/
+        width: 100%;
+        /*--height: 24px;--*/
+        height: 100%;
+        background-color: white;
+        font-size: 13px;
+        text-align: center;
+        display: inline-block;
+        box-sizing: border-box;
+        /*--vertical-align: middle;--*/
+        
+        &:nth-child(6) {
+          font-size: 24px;
+          font-weight: 800;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .breadCrumb {
+    width:100vw;
+    border-bottom: $borderWidth solid $borderColor;
+    border-top: $borderWidth solid $borderColor;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    span {
+      list-style: none;
+      margin-right: 4px;
+      &:last-child {
+        color: pink;
+        font-weight: bold;
+      }
+    }
+  }
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 6.5fr;
+  background-color: $borderColor;
+  gap: $borderWidth;
+  box-sizing: border-box;
+}
+
+.product_img {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://www.rarebeauty.com/cdn/shop/files/find-comfort-body-lotion-closed-1440x1952.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  .img__footer {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    width:95%;
+    position: absolute;
+    bottom: 16px;
+  }
+}
+
+.product_info {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 4fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  gap:$borderWidth;
+  background-color: $borderColor;
+  .product_info__header {
+    background-color: white;
+    grid-column: 1 / 3;
+    padding: 36px 36px;
+    .product_info__header__category {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .product_info__header__title {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 64px;
+    }
+    .product_info__header__add-to-cart {
+      display: flex;
+      gap:36px;
+      div, span {
+        font-weight: 800;
+        font-size: 20px;
+      }
+    }
+  }
+  .product_info__description {
+    background-color: white;
+    p {
+      padding: 24px 36px;
+    }
+  }
+  .product_info__faq {
+    background-color: white;
+    ul {
+      padding: 24px 36px;
+      li {
+        width: 80%;
+        font-size: 20px;
+        border-bottom: solid black 2px;
+        margin-bottom: 8px;
+        padding: 4px;
+      }
+    }
+  }
+}
+
+
+
