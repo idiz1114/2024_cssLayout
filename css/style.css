@@ -80,7 +80,6 @@ body {
       background-position: center;
     }
   }
-  
 }
 
 .allPractices {
@@ -96,15 +95,12 @@ body {
     height:300px;
     border-radius: 12px;
     overflow: hidden;
-
     .practice-image {
       width:100%;
       height:100%;
       background-image: url("../image/01.png");
       background-size: cover;
       background-position: center;
-
-
     }
     /*--하나하나 이미지 넣기--*/
     &:nth-child(2) {
