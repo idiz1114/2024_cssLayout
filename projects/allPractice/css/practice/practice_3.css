@@ -1,7 +1,5 @@
-@import "reset.css";
+@import url("/reset.css");
 
-$borderColor: grey;
-$borderWidth: 2px;
 
 body {
   display: grid;
@@ -15,12 +13,12 @@ header {
   grid-template-rows: 2fr 1fr;
   background-color: yellow;
   nav {
-    background-color: $borderColor;
+    background-color: grey;
     ul {
       display:grid; 
       grid-template-columns: repeat(5,1fr) 1.5fr repeat(5, 1fr);
       grid-template-rows: 1fr;
-      gap:$borderWidth;
+      gap:2px;
       height: 100%;
       li {
         /*--display: block;--*/
@@ -47,8 +45,8 @@ header {
   }
   .breadCrumb {
     width:100vw;
-    border-bottom: $borderWidth solid $borderColor;
-    border-top: $borderWidth solid $borderColor;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
     padding: 8px 24px;
     box-sizing: border-box;
     display: flex;
@@ -69,8 +67,8 @@ header {
 main {
   display: grid;
   grid-template-columns: 5fr 6.5fr;
-  background-color: $borderColor;
-  gap: $borderWidth;
+  background-color: grey;
+  gap: 2px;
   box-sizing: border-box;
 }
 
@@ -98,8 +96,8 @@ main {
   display: grid;
   grid-template-rows: 4fr 3fr;
   grid-template-columns: 1fr 1fr;
-  gap:$borderWidth;
-  background-color: $borderColor;
+  gap:2px;
+  background-color: grey;
   .product_info__header {
     background-color: white;
     grid-column: 1 / 3;

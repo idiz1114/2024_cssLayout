@@ -1,4 +1,4 @@
-@import "reset.css";
+@import url("/reset.css");
 
 :root {
   --white: ##F0F0F0;
@@ -6,7 +6,6 @@
   --grey: #C7C2CB;
   --greenpale: #ACBAAF;
 }
-
 
 
 html {

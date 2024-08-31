@@ -1,4 +1,5 @@
-@import "reset.css";
+@import url("/reset.css");
+
 
 :root {
   --borderColor:#373E44;

@@ -1,4 +1,4 @@
-@import "reset.css";
+@import url("/reset.css");
 
 :root {
   --green: #34E612;
@@ -216,15 +216,10 @@ h3 {
   }
 
 
-  .bar_bottom{
-    grid-row: 3/4;
-    grid-column: 2/3;
-  }
-  .bar_right{
-    grid-row: 1/4;
-  }
-
-
-.image {
-  
+.bar_bottom{
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.bar_right{
+  grid-row: 1/4;
 }
